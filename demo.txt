@@ -1,0 +1,12 @@
+Script started on Thu Sep 27 09:08:02 2018
+[?1034h[sascha|York_gcd$ ls
+a.out		demo.txt	gcd		gcd.cpp
+[sascha|York_gcd$ ./a.out
+Please enter a number: 12
+And another number: 24
+12
+!12
+[sascha|York_gcd$ exit
+exit
+
+Script done on Thu Sep 27 09:08:12 2018
