@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void oh_boy(int m, int n);
+int oh_boy(int m, int n);
 
 int main() {
     int m = 0;
@@ -14,20 +14,22 @@ int main() {
     cout << "And another number: ";
     cin >> n;
 
-    oh_boy(m, n);
+    int num = oh_boy(m, n);
+    cout << "!" << num << endl;
+
     return 0;
 }
 
-void oh_boy(int m, int n) {
+int oh_boy(int m, int n) {
     if (n == 0) {
         cout << m << endl;
-        return;
+        return m;
     }
     else {
         int r = 0;
         r = m % n;
         m = n;
         n = r;
-        oh_boy(m, n);
+        return oh_boy(m, n);
     }
 }
